@@ -81,7 +81,4 @@ municipal_waste["Stát"] = municipal_waste["Stát"].replace(country_dict_EU_2020
 
 municipal_waste["Hodnota - komunálny odpad"] = municipal_waste.apply(thousands_of_tones, axis=1)
 
-
 municipal_waste.to_csv("cisty_komunalny_odpad.csv", index=False, encoding="utf-8")
-
-print(municipal_waste.head())
