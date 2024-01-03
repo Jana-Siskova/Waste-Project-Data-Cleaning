@@ -130,5 +130,3 @@ waste_production["Kategorie"] = waste_production["Kategorie"].replace(waste_cate
 waste_production["Stát"] = waste_production["Stát"].replace(country_dict_EU_2020)
 
 waste_production.to_csv("cista_produkce_odpadu.csv", index=False, encoding="utf-8")
-
-print(waste_production.head())
